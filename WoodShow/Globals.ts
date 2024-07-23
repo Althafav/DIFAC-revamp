@@ -17,7 +17,7 @@ export default class Globals {
     typeResolvers: TypeResolver,
   });
 
-  static SITE_NAME = "CIFAC";
+  static SITE_NAME = "DIFAC";
 
   static BASE_URL: string =
     process.env.NODE_ENV === "production"
