@@ -100,7 +100,7 @@ export default class FooterComponent extends React.Component<
                     <img className="footer-logo" src="/assets/imgs/Difac-logo.png" />
                   ) : ""
                 }
-                <p className="footer-content">Dubai WoodShow is the premier destination for wood specialists who visit the show every year from across the globe. It is the region’s only dedicated business-to-business meeting place for the Wood and Woodworking Machinery Industry.</p>
+                <p className="footer-content">Dubai International Furniture Accessories, Components & Semi-Finished Products 2025 is all set to wow the interior from 14 - 16 April 2025 at Dubai World Trade Centre. With the huge demand of exhibitors during the previous editions of the Dubai WoodShow for a dedicated furniture event, a special show within Dubai WoodShow comes to fore. The DIFAC Show is bringing decision-makers and high level management across the Middle East region and worldwide looking for the latest products in surfaces and fittings, elements and systems, semi-finished products and materials, furniture fabrics and upholstery materials.</p>
 
 
               </div>

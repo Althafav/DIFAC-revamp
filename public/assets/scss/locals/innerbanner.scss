@@ -1,5 +1,5 @@
 ﻿.inner-banner-wrapper {
-    background: url(../../assets/imgs/inner-banner.png);
+    background: url(../../assets/imgs/inner-bg.jpg);
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -7,12 +7,21 @@
     margin-top: 80px;
     position: relative;
 
+    &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        height: 350px;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
     .inner-banner-content {
         position: absolute;
         top: 70%;
         left: 3%;
         transform: translate(0, -70%);
         width: 90%;
+        z-index: 2;
 
         .inner-banner-label {
             color: #fff;

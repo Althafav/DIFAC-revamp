@@ -67,10 +67,10 @@ export default class startupPage extends React.Component<
     render(): React.ReactNode {
         try {
             JsLoader.loadFile(`${Globals.BASE_URL}assets/js/interest.js`);
-          }
-          catch (e) {
-      
-          }
+        }
+        catch (e) {
+
+        }
         return (
             <React.Fragment>
                 <Head>
@@ -82,18 +82,18 @@ export default class startupPage extends React.Component<
                         <div className="container">
                             <div className="row">
                                 <div className="col-12">
-                                    <form method="POST" action="//ac.strategic.ae/proc.php" id="_form_404_" className="_form _form_404 _inline-form  _dark" noValidate>
-                                        <input type="hidden" name="u" value="404" />
-                                        <input type="hidden" name="f" value="404" />
+                                    <form method="POST" action="//ac.strategic.ae/proc.php" id="_form_305_" className="_form _form_305 _inline-form  _dark" noValidate>
+                                        <input type="hidden" name="u" value="305" />
+                                        <input type="hidden" name="f" value="305" />
                                         <input type="hidden" name="s" />
                                         <input type="hidden" name="c" value="0" />
                                         <input type="hidden" name="m" value="0" />
                                         <input type="hidden" name="act" value="sub" />
                                         <input type="hidden" name="v" value="2" />
-                                        <input type="hidden" name="or" value="3ccb6da66cac56c9077f0e71eb04824c" />
+                                        <input type="hidden" name="or" value="110a1dc8697971cc7656477890ed546b" />
                                         <input id="emailExist" hidden type="checkbox" />
                                         <input id="emailValidate" hidden type="checkbox" />
-                                        <input type="hidden" name="field[38]" value="CIFAC 2024 Media Partner" />
+                                        <input type="hidden" name="field[38]" value="DIFAC 2025 Media Partner" />
                                         <div className="_form-content">
                                             <div className="_form_element _x98824631 _full_width ">
                                                 <label>First Name*</label>
@@ -893,16 +893,20 @@ export default class startupPage extends React.Component<
                                                 </div>
                                             </div>
 
-                                            <div className="_form_element _x04229842 _full_width d-none" >
+                                            <div className="_form_element _field159 _full_width d-none">
+                                                <label>Interests*</label>
                                                 <fieldset className="_form-fieldset">
-                                                    <div className="_row">
-                                                        <label className="_form-label">
-                                                            Interests*
-                                                        </label>
-                                                    </div>
-                                                    <input data-autofill="false" type="hidden" id="field[246][]" name="field[246][]" value="~|" />
+                                                    <input data-autofill="false" type="hidden" id="field[159][]" name="field[159][]" value="~|" />
                                                     <div className="_row _checkbox-radio">
-                                                        <input id="field_246Exhibitor" type="checkbox" name="field[246][]" value="Exhibitor" className="any" required />
+                                                        <input id="field_159Visitor" type="checkbox" name="field[159][]" value="Visitor" className="any" required />
+                                                        <span>
+                                                            <label className="checkbox-label">
+                                                                Visitor
+                                                            </label>
+                                                        </span>
+                                                    </div>
+                                                    <div className="_row _checkbox-radio">
+                                                        <input id="field_159Exhibitor" type="checkbox" name="field[159][]" value="Exhibitor" />
                                                         <span>
                                                             <label className="checkbox-label">
                                                                 Exhibitor
@@ -910,7 +914,7 @@ export default class startupPage extends React.Component<
                                                         </span>
                                                     </div>
                                                     <div className="_row _checkbox-radio">
-                                                        <input id="field_246Sponsor" type="checkbox" name="field[246][]" value="Sponsor" />
+                                                        <input id="field_159Sponsor" type="checkbox" name="field[159][]" value="Sponsor" />
                                                         <span>
                                                             <label className="checkbox-label">
                                                                 Sponsor
@@ -918,15 +922,15 @@ export default class startupPage extends React.Component<
                                                         </span>
                                                     </div>
                                                     <div className="_row _checkbox-radio">
-                                                        <input id="field_246Event Partner" type="checkbox" name="field[246][]" value="Event Partner" />
+                                                        <input id="field_159Event Partner" type="checkbox" name="field[159][]" value="Event Partner" />
                                                         <span>
-                                                            <label className="checkbox-label">
+                                                            <label className="checkbox-label" >
                                                                 Event Partner
                                                             </label>
                                                         </span>
                                                     </div>
                                                     <div className="_row _checkbox-radio">
-                                                        <input id="field_246Media Partner" type="checkbox" name="field[246][]" checked value="Media Partner" />
+                                                        <input id="field_159Media Partner" type="checkbox" name="field[159][]" checked disabled value="Media Partner" />
                                                         <span>
                                                             <label className="checkbox-label">
                                                                 Media Partner
@@ -934,18 +938,10 @@ export default class startupPage extends React.Component<
                                                         </span>
                                                     </div>
                                                     <div className="_row _checkbox-radio">
-                                                        <input id="field_246Attend Conference / Workshop / Awards / B2B Meetings" type="checkbox" name="field[246][]" value="Attend Conference / Workshop / Awards / B2B Meetings" />
+                                                        <input id="field_159Attend Conference / Workshop / Awards / B2B Meetings" type="checkbox" name="field[159][]" value="Attend Conference / Workshop / Awards / B2B Meetings" />
                                                         <span>
                                                             <label className="checkbox-label">
                                                                 Attend Conference / Workshop / Awards / B2B Meetings
-                                                            </label>
-                                                        </span>
-                                                    </div>
-                                                    <div className="_row _checkbox-radio">
-                                                        <input id="field_246Visitor" type="checkbox" name="field[246][]" value="Visitor" />
-                                                        <span>
-                                                            <label className="checkbox-label">
-                                                                Visitor
                                                             </label>
                                                         </span>
                                                     </div>
@@ -973,7 +969,7 @@ export default class startupPage extends React.Component<
                                                     </span>
                                                 </div>
 
-                                                {/* <div className="col-6 d-none">
+                                                <div className="col-6 d-none">
                                                     <input id="Sponsorship" onChange={(e) => {
                                                         this.changeCheckedStatus()
                                                     }} type="checkbox" />
@@ -982,7 +978,7 @@ export default class startupPage extends React.Component<
                                                             Download Sponsorship Packages
                                                         </label>
                                                     </span>
-                                                </div> */}
+                                                </div>
 
                                                 <div className="col-12 p-0">
                                                     <input id="newsletter" onChange={(e) => {
@@ -998,16 +994,16 @@ export default class startupPage extends React.Component<
                                             </div>
 
                                             <div style={{ display: "none" }}>
-                                                <div className="_form_element _x68081836 _full_width " >
+                                                <div className="_form_element _x18620027 _full_width ">
                                                     <fieldset className="_form-fieldset">
                                                         <div className="_row">
                                                             <legend className="_form-label">
-                                                                CWS Book Your Stand
+                                                                DWS Book Your Stand
                                                             </legend>
                                                         </div>
-                                                        <input data-autofill="false" type="hidden" id="field[279][]" name="field[279][]" value="~|" />
+                                                        <input data-autofill="false" type="hidden" id="field[278][]" name="field[278][]" value="~|" />
                                                         <div className="_row _checkbox-radio">
-                                                            <input id="field_279Yes" type="checkbox" name="field[279][]" value="Yes" />
+                                                            <input id="field_278Yes" type="checkbox" name="field[278][]" value="Yes" />
                                                             <span>
                                                                 <label>
                                                                     Yes
@@ -1015,7 +1011,7 @@ export default class startupPage extends React.Component<
                                                             </span>
                                                         </div>
                                                         <div className="_row _checkbox-radio">
-                                                            <input id="field_279No" type="checkbox" name="field[279][]" value="No" checked />
+                                                            <input id="field_278No" type="checkbox" name="field[278][]" value="No" checked />
                                                             <span>
                                                                 <label>
                                                                     No
@@ -1024,16 +1020,16 @@ export default class startupPage extends React.Component<
                                                         </div>
                                                     </fieldset>
                                                 </div>
-                                                <div className="_form_element _x88067419 _full_width " >
+                                                <div className="_form_element _field160 _full_width ">
                                                     <fieldset className="_form-fieldset">
                                                         <div className="_row">
-                                                            <legend className="_form-label">
-                                                                CWS Download Brochure
+                                                            <legend className="_form-label m-t-15">
+                                                                DWS Download Brochure
                                                             </legend>
                                                         </div>
-                                                        <input data-autofill="false" type="hidden" id="field[250][]" name="field[250][]" value="~|" />
+                                                        <input data-autofill="false" type="hidden" id="field[160][]" name="field[160][]" value="~|" />
                                                         <div className="_row _checkbox-radio">
-                                                            <input id="field_250Yes" type="checkbox" name="field[250][]" value="Yes" />
+                                                            <input id="field_160Yes" type="checkbox" name="field[160][]" value="Yes" />
                                                             <span>
                                                                 <label>
                                                                     Yes
@@ -1041,7 +1037,7 @@ export default class startupPage extends React.Component<
                                                             </span>
                                                         </div>
                                                         <div className="_row _checkbox-radio">
-                                                            <input id="field_250No" type="checkbox" name="field[250][]" value="No" checked />
+                                                            <input id="field_160No" type="checkbox" name="field[160][]" value="No" checked />
                                                             <span>
                                                                 <label>
                                                                     No
@@ -1050,16 +1046,16 @@ export default class startupPage extends React.Component<
                                                         </div>
                                                     </fieldset>
                                                 </div>
-                                                <div className="_form_element _x93254496 _full_width " >
+                                                <div className="_form_element _field161 _full_width ">
                                                     <fieldset className="_form-fieldset">
                                                         <div className="_row">
-                                                            <legend className="_form-label">
-                                                                CWS Download Post Show Report
+                                                            <legend className="_form-label  m-t-15">
+                                                                DWS Download Sponsorship Packages
                                                             </legend>
                                                         </div>
-                                                        <input data-autofill="false" type="hidden" id="field[251][]" name="field[251][]" value="~|" />
+                                                        <input data-autofill="false" type="hidden" id="field[161][]" name="field[161][]" value="~|" />
                                                         <div className="_row _checkbox-radio">
-                                                            <input id="field_251Yes" type="checkbox" name="field[251][]" value="Yes" />
+                                                            <input id="field_161Yes" type="checkbox" name="field[161][]" value="Yes" />
                                                             <span>
                                                                 <label>
                                                                     Yes
@@ -1067,7 +1063,7 @@ export default class startupPage extends React.Component<
                                                             </span>
                                                         </div>
                                                         <div className="_row _checkbox-radio">
-                                                            <input id="field_251No" type="checkbox" name="field[251][]" value="No" checked />
+                                                            <input id="field_161No" type="checkbox" name="field[161][]" value="No" checked />
                                                             <span>
                                                                 <label>
                                                                     No
@@ -1076,16 +1072,16 @@ export default class startupPage extends React.Component<
                                                         </div>
                                                     </fieldset>
                                                 </div>
-                                                <div className="_form_element _x84025556 _full_width " >
+                                                <div className="_form_element _field162 _full_width ">
                                                     <fieldset className="_form-fieldset">
                                                         <div className="_row">
-                                                            <legend className="_form-label">
-                                                                CWS Subscribe to Newsletter
+                                                            <legend className="_form-label  m-t-15">
+                                                                DWS Subscribe to Newsletter
                                                             </legend>
                                                         </div>
-                                                        <input data-autofill="false" type="hidden" id="field[252][]" name="field[252][]" value="~|" />
+                                                        <input data-autofill="false" type="hidden" id="field[162][]" name="field[162][]" value="~|" />
                                                         <div className="_row _checkbox-radio">
-                                                            <input id="field_252Yes" type="checkbox" name="field[252][]" value="Yes" />
+                                                            <input id="field_162Yes" type="checkbox" name="field[162][]" value="Yes" />
                                                             <span>
                                                                 <label>
                                                                     Yes
@@ -1093,7 +1089,7 @@ export default class startupPage extends React.Component<
                                                             </span>
                                                         </div>
                                                         <div className="_row _checkbox-radio">
-                                                            <input id="field_252No" type="checkbox" name="field[252][]" value="No" checked />
+                                                            <input id="field_162No" type="checkbox" name="field[162][]" value="No" checked />
                                                             <span>
                                                                 <label>
                                                                     No
@@ -1113,7 +1109,7 @@ export default class startupPage extends React.Component<
                                             </div>
 
                                             <div className="_button-wrapper _full_width">
-                                                <button id="_form_404_submit" className="_submit form-submit" type="submit">
+                                                <button id="_form_305_submit" className="_submit form-submit" type="submit">
                                                     Submit
                                                 </button>
                                             </div>
@@ -1121,12 +1117,12 @@ export default class startupPage extends React.Component<
                                             </div>
                                         </div>
                                         <div className="_form-thank-you" style={{ display: "none" }}>
-                                        <span id="message">
+                                            <span id="message">
                                                 Dear [name]
                                                 <br />
                                                 Greetings from the Wood Show Global Organizing Committee
                                                 <br />
-                                                Thank you for your interest in becoming part of the Wood Show Global – Cairo edition, your submission has been submitted successfully.
+                                                Thank you for your interest in becoming part of the Wood Show Global – Dubai edition, your submission has been submitted successfully.
                                                 <br />
                                                 The Organizing Committee will revert to you shortly with the final confirmation for your registration.
                                                 <br />
