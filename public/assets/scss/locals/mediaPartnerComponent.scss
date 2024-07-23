@@ -1,0 +1,25 @@
+.carousel-wrapper-MediaPartners {
+    padding: 50px 0;
+    .heading {
+        font-size: 36px;
+        color: $primary-color;
+        font-weight: 600;
+    }
+
+    .media-cta-btn {
+        border: 2px solid $primary-color;
+        color: $primary-color;
+        background-color: white;
+        font-weight: 600;
+        border-radius: 8px;
+        font-size: 16px;
+        padding: 6px 14px;
+        transition: all 0.4s ease-in;
+
+        &:hover {
+            background-color: $primary-color;
+            color: white;
+        }
+    }
+ 
+}

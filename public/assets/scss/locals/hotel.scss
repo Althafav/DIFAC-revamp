@@ -1,0 +1,35 @@
+﻿.hotel-wrapper {
+    margin-top: 50px;
+
+    .hotel-image {
+        width:150px;
+        margin:auto;
+        margin-bottom:15px;
+    }
+
+    .hotel-direction {
+        direction: rtl;
+
+        @media all and (max-width: 767px) {
+            direction: unset;
+        }
+    }
+
+    .hotel-content-wrap {
+        padding: 10%;
+        color: black;
+        direction: ltr;
+
+        .heading {
+            font-size: 30px;
+            font-weight:600;
+            margin-bottom: 15px;
+        }
+
+        .hotel-content {
+            margin-bottom: 25px;
+            float:left;
+            text-align:justify;
+        }
+    }
+}

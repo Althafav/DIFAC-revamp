@@ -1,0 +1,267 @@
+﻿.top-banner {
+    .text-left {
+        @media all and (max-width: 500px) {
+            font-size: 0.75rem;
+        }
+    }
+
+    a {
+        @media all and (max-width: 992px) {
+            float: left;
+            margin: 0.625rem 0 0 0;
+        }
+
+        @media all and (max-width: 500px) {
+            font-size: 0.75rem;
+        }
+    }
+}
+
+.top-logos {
+    .logo-content {
+        @media all and (max-width: 992px) {
+            display: none;
+        }
+    }
+
+    .patronage-content {
+        @media all and (max-width: 992px) {
+            font-size: 0.75rem;
+        }
+
+        @media all and (max-width: 500px) {
+            font-size: 0.6rem;
+        }
+    }
+}
+
+.nav-menu {
+    .navbar-brand {
+        @media all and (max-width: 992px) {
+            margin: 0 auto;
+        }
+    }
+}
+
+.navbar-light {
+    .navbar-nav {
+        .nav-link {
+            @media all and (min-width: 992px) and (max-width: 1200px) {
+                padding: 1rem 0.5rem;
+                font-size: 0.75rem;
+            }
+
+            @media all and (max-width: 992px) {
+                padding: 0.3125rem;
+                color: $c-blue;
+            }
+        }
+
+        a.register-link {
+            @media all and (min-width: 992px) and (max-width: 1200px) {
+                margin: 0.625rem 0.5rem;
+                font-size: 0.75rem;
+            }
+
+            @media all and (max-width: 992px) {
+                margin: 1rem 0;
+            }
+        }
+    }
+}
+
+.home-video-wrapper {
+    &.expand {
+        @media all and (max-width: 1300px) {
+            height: Calc(100vh - 11.43rem);
+        }
+    }
+
+    video {
+        @media all and (max-width: 1300px) {
+            width: auto;
+            height: 100%;
+            max-width: none;
+        }
+    }
+
+    .home-video-text {
+        @media all and (max-width: 1300px) {
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 100%;
+            width: 80%;
+        }
+
+        h1 {
+            @media all and (max-width: 1200px) {
+                font-size: 2rem;
+            }
+
+            @media all and (max-width: 992px) {
+                font-size: 2rem;
+                line-height: 2.5rem;
+            }
+        }
+
+        .home-video-cta {
+            a {
+                @media all and (max-width: 992px) {
+                    margin-top: 1.25rem;
+                }
+            }
+        }
+
+        .home-video-social {
+            @media all and (max-width: 992px) {
+                margin: 1.25rem 0 0 0;
+            }
+        }
+    }
+}
+
+.home-agenda-card {
+    @media all and (max-width: 992px) {
+        margin-bottom: 1.25rem;
+    }
+
+    &:hover {
+        @media all and (max-width: 992px) {
+            transform: none;
+        }
+
+        img {
+            @media all and (max-width: 992px) {
+                transform: none;
+            }
+        }
+    }
+
+    img {
+        @media all and (max-width: 992px) {
+            width: 100%;
+        }
+    }
+}
+
+.agenda-search-card {
+    &, &.loaded {
+        @media all and (max-width: 992px) {
+            position: relative;
+            left: 0;
+            top: 0;
+            width: 100%;
+            max-width: 100%;
+            transform: none;
+        }
+    }
+
+    .aim-link {
+        @media all and (max-width: 992px) {
+            margin-top: 1.25rem;
+            width: 100%;
+        }
+    }
+}
+
+.agenda-card {
+    @media all and (max-width: 992px) {
+        transform: none !important;
+    }
+}
+
+.home-pillars-wrapper {
+    .home-pillar {
+        .heading {
+            @media all and (min-width: 992px) and (max-width: 1255px) {
+                min-height: 4rem;
+            }
+        }
+    }
+
+    .owl-nav {
+        @media all and (max-width: 992px) {
+            display: none;
+        }
+    }
+}
+
+.blog-article {
+    @media all and (max-width: 992px) {
+        margin-bottom: 2.5rem;
+    }
+}
+
+.home-testimonials-wrapper {
+    .home-testimonial {
+        & > div > p {
+            @media all and (max-width: 992px) {
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+.resources-btn {
+    @media all and (max-width: 992px) {
+        margin-bottom: 1.25rem;
+    }
+}
+
+.footer-list {
+    @media all and (max-width: 992px) {
+        margin-bottom: 2rem;
+    }
+}
+
+footer {
+    img.expo-logo {
+        @media all and (max-width: 992px) {
+            margin-top: 1.5rem;
+        }
+    }
+}
+
+.owl-carousel {
+    .owl-nav {
+        .owl-prev, .owl-next {
+            @media all and (max-width: 992px) {
+                transform: translateX(0);
+            }
+        }
+    }
+}
+
+.mobile-menu {
+    @media all and (max-width: 992px) {
+        display: block;
+    }
+}
+
+.dropdown-menu {
+    @media all and (max-width: 992px) {
+        box-shadow: none;
+    }
+}
+
+.search-menu-btn {
+    @media all and (max-width: 992px) {
+        width: 3.125rem;
+        height: 2.5rem;
+        font-size: 1rem;
+    }
+}
+
+.owl-nav {
+    @media all and (max-width: 992px) {
+        display: none;
+    }
+}
+
+.em-cd-wrapper {
+    .text-left, .text-right {
+        @media all and (max-width: 992px) {
+            text-align: center !important;
+        }
+    }
+}

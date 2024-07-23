@@ -1,0 +1,40 @@
+﻿.inner-banner-wrapper {
+    background: url(../../assets/imgs/inner-banner.png);
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    height: 350px;
+    margin-top: 80px;
+    position: relative;
+
+    .inner-banner-content {
+        position: absolute;
+        top: 70%;
+        left: 3%;
+        transform: translate(0, -70%);
+        width: 90%;
+
+        .inner-banner-label {
+            color: #fff;
+            font-size: 18px;
+            margin-bottom: 12px;
+
+            a {
+                color: white;
+            }
+        }
+
+        .inner-banner-heading {
+            color: #fff;
+            font-size: 38px;
+            line-height: 1;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 5px;
+
+            @media all and (max-width: 767px) {
+                font-size: 30px;
+            }
+        }
+    }
+}

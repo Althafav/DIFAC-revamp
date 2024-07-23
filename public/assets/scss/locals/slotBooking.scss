@@ -1,0 +1,107 @@
+﻿.slot-booking-wrapper {
+    margin: 50px 0px;
+
+    .slot-calender-wrap {
+        /*background: #c9e0e2;*/
+        width: 100%;
+        max-width: 350px;
+        margin: auto;
+        margin-bottom: 20px;
+        border: 2px solid #b21817;
+        border-radius: 15px;
+
+        table {
+            width: 100%;
+
+            .calender-heading {
+                text-align: center;
+                font-size: 22px;
+                padding: 10px 0;
+            }
+
+            th {
+                width: 14.28%;
+                text-align: center;
+                font-weight: 600;
+                color: #444444;
+                font-size: 18px;
+                padding: 5px;
+            }
+
+            td {
+                text-align: center;
+                font-weight: 600;
+                color: black;
+                font-size: 18px;
+                padding: 0px;
+                position: relative;
+                padding: 3px 0;
+
+                a {
+                    color: black;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 35px;
+                    height: 35px;
+                    padding: 5px;
+                    border-radius: 50%;
+
+                    &:hover {
+                        background: #a52a2a87;
+                    }
+                }
+            }
+
+            .disable-date {
+                color: #444444ba;
+            }
+
+            .enable-date {
+                a {
+                    background: #a52a2a87 !important;
+                }
+            }
+        }
+    }
+
+    .slots-wrapper {
+        .slot-wrap {
+            border: 1px solid #707070;
+            padding: 5px;
+            text-align: center;
+            border-radius: 25px;
+            color: black;
+            margin-bottom: 15px;
+            cursor: pointer;
+
+            &:hover {
+                background: rgba(165,42,42,.5294117647);
+            }
+        }
+
+        .booked {
+            background: rgba(165,42,42,.5294117647);
+        }
+
+        .full-booked {
+            background: #E8E8E8;
+        }
+    }
+
+    .label-slot{
+        margin-bottom:0;
+        margin-top:10px;
+        }
+    .btn-submit {
+        background: #b21817;
+        border: 1px solid #b21817;
+        color: white;
+        font-size: 15px;
+        font-weight: 600;
+        padding: 5px 15px;
+        border-radius: 25px;
+        margin-top: 15px;
+    }
+}

@@ -1,0 +1,32 @@
+﻿.form-wrapper {
+    margin-top: 50px;
+    margin-bottom: 30px;
+
+    ._field-wrapper {
+        margin-bottom: 15px;
+    }
+
+    label {
+        color: #5f4128;
+        font-size: 15px;
+        margin: 0;
+    }
+
+    .form-submit {
+        background: transparent;
+        border: 1px solid #5f4128;
+        color: #5f4128;
+        text-transform: uppercase;
+        font-size: 15px;
+        font-weight: 600;
+        padding: 5px 15px;
+        border-radius: 25px;
+        margin-top: 15px;
+    }
+
+    .checkbox-label{
+        color:black!important;
+        font-weight:100!important;
+        margin-left:5px;
+    }
+}

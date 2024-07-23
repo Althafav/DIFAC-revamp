@@ -1,0 +1,404 @@
+﻿.award-wrapper {
+    .award-inner-banner-wrapper {
+        background: url(../../assets/imgs/inner-banner.png);
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        height: 450px;
+        position: relative;
+
+        .inner-banner-content {
+            position: absolute;
+            top: 70%;
+            left: 10%;
+            transform: translate(0, -70%);
+            width: 90%;
+
+            .inner-banner-heading {
+                color: #fff;
+                font-size: 38px;
+                line-height: 1;
+                text-transform: uppercase;
+                font-weight: 600;
+                margin-bottom: 30px;
+
+                @media all and (max-width: 767px) {
+                    font-size: 30px;
+                }
+            }
+
+            .award-banner-btn {
+                color: white;
+                border: 1px solid white;
+                font-weight: 600;
+                padding: 10px 25px;
+                border-radius: 25px;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .award-container {
+        padding: 50px 0;
+
+        .heading {
+            color: #5D3E26;
+            font-size: 35px;
+            margin: 0;
+        }
+
+        .heading-line {
+            margin-bottom: 1rem;
+            border: 0;
+            border-top: 2px solid rgba(0,0,0,.1);
+            border-color: #5D3E26;
+            width: 100px;
+        }
+
+        .award-content {
+            color: #5D3E26;
+            margin-bottom: 15px;
+        }
+
+        .award-btn {
+            color: #e59450;
+            border: 1px solid #e59450;
+            font-size: 16px;
+            padding: 8px 22px;
+            border-radius: 25px;
+            font-weight: 600;
+        }
+    }
+
+    .award-block {
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        height: 200px;
+        position: relative;
+
+        .inner-block-content {
+            position: absolute;
+            top: 50%;
+            left: 10%;
+            transform: translate(0, -50%);
+            width: 80%;
+
+            .heading {
+                color: #fff;
+                margin: 0;
+                font-size: 25px;
+                font-weight: 600;
+                line-height: 2;
+            }
+
+            .subheading {
+                color: #fff;
+                margin: 0;
+                font-size: 30px;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .award-category-wrapper {
+        padding: 50px 0;
+
+        .award-category-container {
+            background: #fceede;
+            padding: 80px 70px;
+            border-radius: 35px;
+
+            .heading {
+                color: #5D3E26;
+                font-size: 25px;
+                margin: 0;
+            }
+
+            .heading-line {
+                margin-bottom: 1rem;
+                border: 0;
+                border-top: 2px solid rgba(0,0,0,.1);
+                border-color: #936229;
+                width: 80px;
+            }
+
+            .award-category-content {
+                color: #5d3e26;
+                font-size: 18px;
+                line-height: 2;
+                margin-bottom: 35px;
+            }
+
+            .award-category-btn {
+                background: #e59450;
+                color: white;
+                font-weight: 600;
+                border-radius: 25px;
+                padding: 7px 14px;
+            }
+        }
+    }
+
+    .criteria-wrapper {
+        padding: 50px 0;
+
+        .criteria-container {
+            border: 1px solid #e59450;
+            border-radius: 15px;
+            padding: 30px 50px;
+
+            .heading {
+                color: #5D3E26;
+                font-size: 25px;
+                margin: 0;
+            }
+
+            .heading-line {
+                margin-bottom: 1rem;
+                border: 0;
+                border-top: 2px solid rgba(0,0,0,.1);
+                border-color: #936229;
+                width: 80px;
+            }
+
+            .criteria-content {
+                color: #5D3E26;
+
+                ul {
+                    list-style: disc;
+                    margin: 0;
+
+                    li {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+.winner-wrapper {
+    .award-inner-banner-wrapper {
+        background: url(../../assets/imgs/inner-banner.png);
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        height: 450px;
+        position: relative;
+
+        .inner-banner-content {
+            position: absolute;
+            top: 70%;
+            left: 10%;
+            transform: translate(0, -70%);
+            width: 90%;
+
+            .inner-banner-heading {
+                color: #fff;
+                font-size: 38px;
+                line-height: 1;
+                text-transform: uppercase;
+                font-weight: 600;
+                margin-bottom: 30px;
+
+                @media all and (max-width: 767px) {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+
+    .winner-content-wrapper {
+        padding: 30px 0;
+
+        .heading {
+            color: #5D3E26;
+            font-size: 25px;
+            margin: 0;
+        }
+
+        .heading-line {
+            margin-bottom: 2rem;
+            border: 0;
+            border-top: 2px solid rgba(0,0,0,.1);
+            border-color: #936229;
+            width: 80px;
+            margin-top: 3px;
+        }
+
+        .image-bg {
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            background-size: contain !important;
+            height: 300px;
+            position: relative;
+
+            .image-bg-content {
+                position: absolute;
+                right: 0;
+                bottom: 20px;
+                width: 70%;
+                background: #E59450;
+                color: white;
+                border-radius: 15px;
+                padding: 5px 15px;
+                line-height: 1.2;
+                font-size: 13px;
+            }
+        }
+
+        .winner-content {
+            color: #5D3E26;
+        }
+
+        .criteria-wrapper {
+            .criteria-container {
+                border: 1px solid #E59450;
+                border-radius: 15px;
+                padding: 30px 50px;
+
+                .label {
+                    margin-bottom: 5px;
+                    color: #5D3E26;
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+
+                .criteria-content {
+                    color: #5D3E26;
+
+                    ul {
+                        list-style: disc;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .criteria-content-wrapper {
+        padding: 30px 0;
+
+        .heading {
+            color: #5D3E26;
+            font-size: 25px;
+            margin: 0;
+        }
+
+        .heading-line {
+            margin-bottom: 2rem;
+            border: 0;
+            border-top: 2px solid rgba(0,0,0,.1);
+            border-color: #936229;
+            width: 80px;
+            margin-top: 3px;
+        }
+
+        .heading-content {
+            color: #5D3E26;
+        }
+
+        .label-criteria {
+            color: #5D3E26;
+            font-family: 'Cormorant Garamond';
+            font-weight: 600;
+        }
+
+        .criteria-table {
+            td {
+                border-color: #e59450;
+            }
+        }
+
+        .criteria-wrapper {
+            margin-bottom: 15px;
+
+            .criteria-container {
+                border: 1px solid #E59450;
+                border-radius: 15px;
+                padding: 30px;
+
+                .label {
+                    margin-bottom: 5px;
+                    color: #5D3E26;
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+
+                .criteria-content {
+                    color: #5D3E26;
+
+                    ul {
+                        list-style: disc;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        .criteria-btn {
+            background: #e59450;
+            color: white;
+            font-weight: 600;
+            border-radius: 25px;
+            padding: 10px 35px;
+        }
+
+        .col-md-25 {
+            @media (min-width: 768px) {
+                flex: 0 0 20%;
+                max-width: 20%;
+            }
+        }
+
+        .criteria-ul {
+            margin: auto;
+            display: inline;
+
+            li {
+                display: inline;
+                background: #E59450;
+
+                img {
+                    display: inline;
+                    margin: auto;
+                }
+            }
+        }
+
+        .criteria-content-box {
+            background: #e59450;
+            padding: 25px 10px;
+            border-radius: 25px;
+            height:100%;
+
+            img {
+                margin: auto;
+                margin-bottom: 10px;
+            }
+
+            p {
+                color: white;
+                margin: 0;
+                line-height:1.2;
+                font-size:13px;
+            }
+        }
+    }
+
+
+    .winner-content-wrapper-dark {
+        background: #FCEEDE;
+    }
+
+    .winner-block {
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        height: 300px;
+        position: relative;
+    }
+}

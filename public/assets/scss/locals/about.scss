@@ -1,0 +1,125 @@
+﻿.about-page-wrapper {
+    margin: 50px 0px;
+
+    .about-container {
+        background-color: #fdf5ef;
+        padding: 15px;
+        margin-bottom: 15px;
+
+        .about-content {
+            font-size: 18px;
+        }
+
+        .about-image {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+
+.brown-line {
+    border-color: #623c21;
+}
+
+.logos-ul {
+    margin: 0;
+    text-align: center;
+    margin: 20px 0;
+
+    .logos-li {
+        display: inline;
+
+        img {
+            width: fit-content;
+            display: inline;
+            margin: 0 10px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.logos-content {
+    background: #8e5b24;
+    color: white;
+    padding: 25px;
+    font-size: 17px;
+}
+
+.date-venue {
+    text-transform: uppercase;
+    color: white;
+    width: fit-content;
+    padding: 10px;
+    margin: 8px 0px;
+    text-align: left;
+
+    p {
+        margin: 0;
+        font-size: 17px;
+        font-weight: 600;
+        text-align: left;
+    }
+}
+
+.logo-daate-content {
+    font-size: 17px;
+    font-weight: 600;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.red-bg {
+    background: #e59450;
+}
+
+.red-btn {
+    color: #e59450;
+    border: 2px solid #e59450;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 4;
+}
+
+.orange-bg {
+    background: #e59450;
+}
+
+.orange-btn {
+    color: #e59450;
+    border: 2px solid #e59450;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 4;
+}
+
+.blue-bg {
+    background: #0c9d9d;
+}
+
+.blue-btn {
+    color: #0c9d9d;
+    border: 2px solid #0c9d9d;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 4;
+}
+
+.green-bg {
+    background: #a1c95b;
+}
+
+.green-btn {
+    color: #a1c95b;
+    border: 2px solid #a1c95b;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 4;
+}

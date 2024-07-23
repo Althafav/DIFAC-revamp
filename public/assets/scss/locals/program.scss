@@ -1,0 +1,113 @@
+﻿.program-wrapper {
+    margin-top: 50px;
+
+    .program-ul {
+        text-align: center;
+
+        .program-li {
+            list-style: none;
+            display: inline;
+
+            a {
+                border-color: #5f4128;
+                color: #5f4128;
+                border: 2px solid;
+                font-weight: 600;
+                padding: 8px 20px;
+                font-size: 19px;
+                border-radius: 25px;
+                text-transform: uppercase;
+                margin: 0 5px;
+
+                &:hover {
+                    color: white;
+                    background: #5f4128;
+                }
+            }
+
+            .program-selected {
+                color: white;
+                background: #5f4128;
+            }
+        }
+    }
+
+    .program-container {
+        margin-bottom: 20px;
+
+        .program-table {
+            .program-row {
+                background: #f3fbfb;
+                cursor: pointer;
+
+                .program-row-date {
+                    width: 25%
+                }
+
+                .program-row-time {
+                    width: 15%
+                }
+
+                .program-name {
+                    font-weight: 600;
+                    width: 60%;
+                }
+            }
+        }
+
+        .speaker-heading {
+            font-weight: 600;
+            font-size: 17px;
+        }
+
+        .program-detail {
+            border: 1px solid silver;
+
+            .program-content {
+                font-size: 12px;
+                line-height: 1.8;
+                margin-top: 12px;
+            }
+        }
+
+        .speaker-container {
+            background: #f2f2f2;
+            padding: 18px;
+            overflow: hidden;
+            border-radius: 20px;
+            cursor: pointer;
+            margin-bottom: 15px;
+
+            .speaker-image {
+                height: 100px;
+                margin: auto;
+                margin-bottom: 6px;
+            }
+
+            .speaker-name {
+                text-align: center;
+                font-weight: 600;
+                margin: 0;
+                color: #127d9c;
+            }
+
+            .speaker-position {
+                text-align: center;
+                margin: 0;
+                color: #127d9c;
+            }
+
+            &:hover {
+                background: #127d9c;
+
+                .speaker-name {
+                    color: white;
+                }
+
+                .speaker-position {
+                    color: white;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,150 @@
+﻿.sponsorship-opportunity-wrapper {
+    .sponsorship-opportunity-container {
+        background: #f4e9da;
+        margin-top: 15px;
+        padding: 50px 0;
+
+        .label {
+            font-style: italic;
+            color: #e59450;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .heading {
+            margin: 0;
+            font-size: 25px;
+            font-family: 'proxima_nova_rgbold';
+            font-weight: 600;
+        }
+    }
+
+    .sponsorship-opportunity-content {
+        background: #dddddd;
+        padding: 30px 0px;
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .opportunity-section {
+        padding: 30px 0;
+
+        .heading {
+            font-family: 'proxima_nova_rgbold';
+        }
+
+        .opportunity-bg {
+            background-position: center !important;
+            background-repeat: no-repeat !important;
+            background-size: cover !important;
+            height: 280px;
+            cursor: pointer;
+            position: relative;
+            cursor: pointer;
+
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: #5d3e26b8;
+            }
+
+            .inner-content {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                width: 100%;
+                z-index: 1;
+                padding: 20px;
+
+                img {
+                    margin: auto;
+                    width: 30px;
+                    margin-bottom: 15px;
+                }
+
+                .inner-heading {
+                    color: white;
+                    font-size: 16px;
+                    text-align: center;
+                }
+
+                .inner-content-content {
+                    display: none;
+                }
+            }
+
+            .inner-content-br {
+                position: absolute;
+                left: 0;
+                height: 280px;
+                width: 6px;
+                background: #e59450;
+                display: none;
+                z-index: 1;
+            }
+
+            &:hover {
+                &::after {
+                    background: #FCEEDE;
+                }
+
+                .inner-content-br {
+                    display: unset;
+                }
+
+                .inner-content {
+
+                    img {
+                        display: none;
+                    }
+
+                    .inner-heading {
+                        color: #e59450;
+                        font-size: 16px;
+                        font-weight: 600;
+                        text-align: left;
+                    }
+
+                    .inner-content-content {
+                        color: black;
+                        font-size: 16px;
+                        margin: 0;
+                        display: block;
+                        text-align: left;
+                        line-height: 1.2;
+                    }
+                }
+            }
+        }
+    }
+
+    .business-objective-wrapper {
+        background: #FEF8F0;
+        padding: 30px 0;
+
+        .business-objective-container {
+            background: white;
+            padding: 20px 15px;
+            text-align: justify;
+            height: 100%;
+            cursor: pointer;
+            border-radius:15px;
+
+            img {
+                width: 30px;
+                margin-bottom: 10px;
+            }
+
+            &:hover {
+                box-shadow: 1px 0 10px rgb(0 0 0 / 10%);
+            }
+        }
+    }
+}

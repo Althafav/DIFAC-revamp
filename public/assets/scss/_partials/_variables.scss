@@ -1,0 +1,93 @@
+/* Fonts */
+$ff-100: NotoSans-ExtraLight, OpenSans-SemiboldItalic;
+$ff-200: NotoSans-Light, OpenSans-SemiboldItalic;
+$ff-300: NotoSans-Thin, OpenSans-SemiboldItalic;
+$ff-400: NotoSans-Regular, OpenSans-SemiboldItalic;
+$ff-500: Roboto-Regular, OpenSans-SemiboldItalic;
+$ff-600: Roboto-Medium, OpenSans-SemiboldItalic;
+$ff-700: Roboto-Bold, OpenSans-SemiboldItalic;
+$ff-800: NotoSans-ExtraBold, OpenSans-SemiboldItalic;
+$ff-900: NotoSans-Black, OpenSans-SemiboldItalic;
+$ff-taj-100: Tajawal-ExtraLight, Helvetica, sans-serif, Arial;
+$ff-taj-200: Tajawal-Light, Helvetica, sans-serif, Arial;
+$ff-taj-300: Tajawal-Regular, Helvetica, sans-serif, Arial;
+$ff-taj-400: Tajawal-Medium, Helvetica, sans-serif, Arial;
+$ff-taj-500: Tajawal-Bold, Helvetica, sans-serif, Arial;
+$ff-taj-600: Tajawal-ExtraBold, Helvetica, sans-serif, Arial;
+$ff-taj-700: Tajawal-Black, Helvetica, sans-serif, Arial;
+$ff-ami-100: Amiri-Regular, Helvetica, sans-serif, Arial;
+$ff-ami-600: Amiri-Bold, Helvetica, sans-serif, Arial;
+$ff-har-100: Harmattan-Regular, Helvetica, sans-serif, Arial;
+$ff-har-600: Harmattan-Bold, Helvetica, sans-serif, Arial;
+/* General */
+$fs: 0.875rem;
+$lh: 1.625rem;
+/* Colors */
+$c-light-blue:#40d1e0;
+$c-blue: #2a6894;
+$c-dark-blue: #2B5572;
+$c-navy: #132C3C;
+$c-turquoise: #73fbfc;
+$b: #000;
+$c0: #0c0c0c;
+$b1: #111;
+$b2: #222;
+$b3: #333;
+$b39: #393939;
+$b4: #444;
+$b52: #525252;
+$b6: #666;
+$b8: #888;
+$bf: #bfbfbf;
+$a: #aaa;
+$a2: #2a2a2a;
+$c: #ccc;
+$c1: #c1c1c1;
+$c3: #c3c3c3;
+$c5: #c5c5c5;
+$cd: #cdcdcd;
+$d: #ddd;
+$d0d1: #d0d0d1;
+$e: #eee;
+$e1: #e1e1e1;
+$e5: #e5e5e5;
+$e6: #e6e6e6;
+$ec: #ececec;
+$e9: #e9e9e9;
+$ea: #eaeaea;
+$f1: #f1f1f1;
+$f2: #f2f2f2;
+$f5: #f5f5f5;
+$f7: #f7f7f7;
+$f9: #f9f9f9;
+$fa: #fafafa;
+$fc: #fcfcfc;
+$f: #fff;
+$fe: #e8e6ef;
+$success: #00a025;
+$danger: #af0011;
+$c-fb: #4064ac;
+$c-twitter: #5ba4d6;
+$c-instagram: #7936aa;
+$c-youtube: #f70000;
+$c-telegram: #28a7ea;
+$c-cookie-bg: #ff9800;
+$c-cookie-link: #003b7b;
+$c-testimonial: #d3fefe;
+$c-purple: #673ab7;
+$c-green-yellow: #afb42b;
+$c-orange: #f44336;
+$c-green: #1b5e20;
+$c-pink: #e91e63;
+
+
+
+$secondary-color : #e59450;
+$secondary-color-varient: #e59450c2;
+$primary-color: #0f783d;
+$primary-color-varient: #14b04b;
+
+$linear-gradient-secondary-to-right: linear-gradient(to right, $secondary-color, $secondary-color-varient);
+$linear-gradient-dark-to-right: linear-gradient(to right, #000000, #f4f4f400);
+
+$dark-color: #343A40;

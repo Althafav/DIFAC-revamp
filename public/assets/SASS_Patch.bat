@@ -1,0 +1,1 @@
+powershell sass --watch D:/Abderrahmane/Projects/AIMGlobal/aimglobal/aim/public/assets/scss/main.scss:D:/Abderrahmane/Projects/AIMGlobal/aimglobal/aim/public/assets/css/main.min.css --style compressed
