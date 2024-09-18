@@ -9,6 +9,7 @@ import { Galleryyears } from "../models/galleryyears";
 import { Homepage } from "../models/homepage";
 import { Menu } from "../models/menu";
 import { Menuitem } from "../models/menuitem";
+import { PartnerPage } from "../models/partner_page";
 import { Partneritem } from "../models/partneritem";
 import { Partnerspage } from "../models/partnerspage";
 import { Statsitems } from "../models/statsitems";
@@ -77,6 +78,11 @@ export const TypeResolver = [
     "Galleryyears",
     (rawData: any) => new Galleryyears()
   ),
-  
+
+  new KontentDelivery.TypeResolver(
+    "PartnerPage",
+    (rawData: any) => new PartnerPage()
+  ),
+
 
 ];

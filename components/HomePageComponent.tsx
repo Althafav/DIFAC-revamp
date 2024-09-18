@@ -78,9 +78,8 @@ export default class HomePageComponent extends React.Component<
                                 {/* <span className="m-b-40 text-justify about-description"
                                     dangerouslySetInnerHTML={{ __html: pageData.aboutContent.value }}
                                 /> */}
-                                <p className="description">Dubai International Furniture Accessories, Components & Semi-Finished Products 2024 is all set to wow the interior from 5 - 7 March 2024 at Dubai World Trade Centre. With the huge demand of exhibitors during the previous editions of the Dubai WoodShow for a dedicated furniture event, a special show within Dubai WoodShow comes to fore.
-
-                                    The DIFAC Show is bringing decision-makers and high level management across the Middle East region and worldwide looking for the latest products in surfaces and fittings, elements and systems, semi-finished products and materials, furniture fabrics and upholstery materials.</p>
+                                <p className="description">Dubai International Furniture Accessories & Components & Semi-Finished Products Show will take place from 14 - 16 April 2025, in conjunction with Dubai WoodShow 2025 at Dubai World Trade Centre 
+                                The exhibition will showcase the innovative furniture technologies, products and brands. It gives the visitors a chance to educate themselves about the latest products in surfaces and fittings, elements and systems, semi-finished products and materials, furniture fabrics and upholstery materials.</p>
                                 {
                                     pageData.aboutBtnLink.value ? (
                                         <Link passHref={true} legacyBehavior={true} href={pageData.aboutBtnLink.value}>

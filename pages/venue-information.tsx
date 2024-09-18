@@ -65,7 +65,7 @@ function ListPage({ data }: { data: Basiccontentpage }) {
                             data.image.value[0] ? (
                                 <div className="row">
                                     <div className="col-12 m-b-20">
-                                        <img src={data.image.value[0].url} />
+                                        <img src={data.image.value[0].url} style={{maxWidth: "850px", width: "100%", objectFit: "cover"}}/>
                                     </div>
                                 </div>
                             ) : ""

@@ -11,7 +11,7 @@ import BookYourStandComponent from "../components/BookYourStandComponent";
 import Image from "next/image";
 
 export async function getStaticProps() {
-    const datasourceStr: string = await Globals.KontentClient.item("exhibitors_profile_page")
+    const datasourceStr: string = await Globals.CIFAC_KontentClient.item("exhibitors_profile_page")
         .withParameter("depth", "4")
         .languageParameter(Globals.CURRENT_LANG_CODENAME)
         .toObservable()
@@ -22,7 +22,7 @@ export async function getStaticProps() {
 
     const data: Basiccontentpage = JSON.parse(datasourceStr);
 
-    const exhibitorBenefitDataStr: string = await Globals.KontentClient.item("exhibitors_benefits_page")
+    const exhibitorBenefitDataStr: string = await Globals.CIFAC_KontentClient.item("exhibitors_benefits_page")
         .languageParameter(Globals.CURRENT_LANG_CODENAME)
         .toObservable()
         .toPromise()
@@ -83,64 +83,56 @@ function ListPage({ data, exhibitorBenefitData }: { data: Basiccontentpage, exhi
                             </div>
                         </div>
 
-                        <div className="row d-flex justify-content-center align-items-center">
-                            {/* {
-                                data.items.value.map((d: any) => {
-                                    var item: Partneritem = d;
-                                    return (
-                                        <div className="col-12 col-md-6 col-lg-3 text-center m-b-20">
-                                            <div className="event-page-item" onClick={() => handleClick(item)}>
-                                                <img src={item.image.value[0].url} />
-                                                <p>{item.name.value}</p>
+                        {data.items.value.length > 1 && (
+                            <>
+                                <div className="row d-flex justify-content-center align-items-center">
 
-                                            </div>
-                                        </div>
-                                    )
-                                })
-                            } */}
 
-                            {data.items.value.map((d: any) => {
-                                var item: Partneritem = d;
-                                return (
-                                    <div className="col-lg-3 col-md-6 col-12 m-b-20">
-                                        <div className="exhibitor-profile-item" onClick={() => handleClick(item)}>
-                                            <div>
+                                    {data.items.value.map((d: any) => {
+                                        var item: Partneritem = d;
+                                        return (
+                                            <div className="col-lg-3 col-md-6 col-12 m-b-20">
+                                                <div className="exhibitor-profile-item" onClick={() => handleClick(item)}>
+                                                    <div>
 
-                                                <img className="exhibitor-profile-item-img" src={item.image.value[0].url} alt="" />
+                                                        <img className="exhibitor-profile-item-img" src={item.image.value[0].url} alt="" />
 
-                                                <div className="item-text-content">
-                                                    <p className="item-name">{item.name.value}</p>
-                                                    <p className="view-details">View Details</p>
+                                                        <div className="item-text-content">
+                                                            <p className="item-name">{item.name.value}</p>
+                                                            <p className="view-details">View Details</p>
+
+                                                        </div>
+                                                    </div>
 
                                                 </div>
                                             </div>
 
-                                        </div>
-                                    </div>
 
-
-                                )
-                            })}
-
-
-
-
-
-
-                        </div>
-
-                        <div className="row">
-                            <div className="col-12 m-b-30">
-                                {
-                                    data.buttons.value.map((b: any) => {
-                                        var item: Buttons = b;
-                                        return (
-                                            <a href={item.link.value} className="btn-red-transparent m-r-20" target={item.target.value == 1 ? "_blank" : "_self"}>{item.name.value}</a>
                                         )
-                                    })
-                                }
-                            </div>
-                        </div>
+                                    })}
+
+
+
+
+
+
+                                </div>
+
+                                <div className="row">
+                                    <div className="col-12 m-b-30">
+                                        {
+                                            data.buttons.value.map((b: any) => {
+                                                var item: Buttons = b;
+                                                return (
+                                                    <a href={item.link.value} className="btn-red-transparent m-r-20" target={item.target.value == 1 ? "_blank" : "_self"}>{item.name.value}</a>
+                                                )
+                                            })
+                                        }
+                                    </div>
+                                </div></>
+                        )}
+
+
                     </div>
                 </div>
 

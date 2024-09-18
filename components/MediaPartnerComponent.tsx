@@ -5,27 +5,28 @@ import Globals from "../WoodShow/Globals";
 import Services from "../WoodShow/Services";
 import { Partneritem } from "../models/partneritem";
 import { Buttons } from "../models/buttons";
+import { PartnerPage } from "../models/partner_page";
 
 
 
 export default class MediaPartnerComponent extends React.Component<
   {},
   {
-    pageData: Partnerspage;
+    pageData: PartnerPage;
     isLoaded: Boolean;
   }
 > {
   constructor(props: any) {
     super(props);
     this.state = {
-      pageData: new Partnerspage(),
+      pageData: new PartnerPage(),
       isLoaded: false,
     };
   }
 
   componentDidMount() {
 
-    Globals.KontentClient.item("media_partners_page")
+    Globals.WSD_KontentClient.item("media_partners_page")
 
       .toObservable()
       .subscribe((response: any) => {
@@ -59,14 +60,14 @@ export default class MediaPartnerComponent extends React.Component<
           <h2 className="section-heading">{pageData.heading.value}</h2>
         </div>
 
-        <div className="media-carousel owl-carousel">
+        <div className="media-carousel owl-carousel mt-4">
           {pageData.items.value.map((m: any, index: number) => {
             var item: Partneritem = m;
             return (
               <div className="media-img">
                 {
-                  item.image.value[0] ? (
-                    <img src={item.image.value[0].url} />
+                  item.logo.value[0] ? (
+                    <img src={item.logo.value[0].url} style={{height: "180px",  objectFit: "contain" , objectPosition: "center"}}/>
 
                   ) : ""
                 }
@@ -77,12 +78,13 @@ export default class MediaPartnerComponent extends React.Component<
         </div>
 
         <div className="cta-btn-wrapper text-center mt-5">
-          {pageData.cta.value.map((m: any, index: number) => {
-            var item: Buttons = m;
-            return (
-              <button className="media-cta-btn">{item.name.value}</button>
-            )
-          })}
+
+          <Link href='/media-partners'>
+
+            <button className="media-cta-btn">View More</button>
+          </Link>
+
+
         </div>
 
         <button></button>

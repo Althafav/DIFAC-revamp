@@ -10,7 +10,7 @@ import JsLoader from "../WoodShow/JsLoader";
 import Services from "../WoodShow/Services";
 
 export async function getStaticProps() {
-    const datasourceStr: string = await Globals.KontentClient.item("visitors_profile_page")
+    const datasourceStr: string = await Globals.CIFAC_KontentClient.item("visitors_profile_page")
         .languageParameter(Globals.CURRENT_LANG_CODENAME)
         .toObservable()
         .toPromise()
@@ -72,7 +72,7 @@ function ListPage({ data }: { data: Basiccontentpage }) {
                             <div className="col-12">
                                 <h2 className="section-heading text-dark">{data.heading.value}</h2>
                             </div>
-                            <div className="col-12">
+                            {/* <div className="col-12">
 
                                 {
                                     data.content.value ? (
@@ -84,57 +84,61 @@ function ListPage({ data }: { data: Basiccontentpage }) {
 
 
 
-                            </div>
+                            </div> */}
                         </div>
 
+                        {data.items.value.length > 1 ? (
+                            <>
+                                <div className="row m-t-10 relative">
+                                    <div className="col-12">
+                                        <div className="Visitor-profle owl-carousel">
+                                            {
+                                                data.items.value.map((d: any) => {
+                                                    var item: Partneritem = d;
+                                                    return (
+                                                        <div className="mr-2 m-b-20">
+                                                            <div className="visitors-profile-item">
+                                                                <img src={item.image.value[0].url} />
+                                                                <p className="name">{item.name.value}</p>
+                                                            </div>
+                                                        </div>
+                                                    )
+                                                })
+                                            }
 
-                        <div className="row m-t-10 relative">
-                            <div className="col-12">
-                                <div className="Visitor-profle owl-carousel">
-                                    {
-                                        data.items.value.map((d: any) => {
-                                            var item: Partneritem = d;
-                                            return (
-                                                <div className="mr-2 m-b-20">
-                                                    <div className="visitors-profile-item">
-                                                        <img src={item.image.value[0].url} />
-                                                        <p className="name">{item.name.value}</p>
-                                                    </div>
-                                                </div>
-                                            )
-                                        })
-                                    }
 
 
 
+                                        </div>
+
+                                        <div className="owl-nav-custom d-flex justify-content-center justify-content-lg-end">
+                                            <div className="owl-next-custom">
+                                                <img src="/assets/imgs/right.png" alt="" />
+                                            </div>
+                                        </div>
+
+                                    </div>
 
                                 </div>
 
-                                <div className="owl-nav-custom d-flex justify-content-center justify-content-lg-end">
-                                    <div className="owl-next-custom">
-                                        <img src="/assets/imgs/right.png" alt="" />
+                                <div className="row">
+                                    <div className="col-12 m-b-30">
+
+                                        {
+                                            data.buttons.value?.map((b: any) => {
+                                                var item: Buttons = b;
+                                                return (
+                                                    <a href={item.link.value} className="btn-red-transparent m-r-20" target={item.target.value == 1 ? "_blank" : "_self"}>{item.name.value}</a>
+                                                )
+                                            })
+                                        }
+
+
                                     </div>
                                 </div>
+                            </>
+                        ) : ""}
 
-                            </div>
-
-                        </div>
-
-                        <div className="row">
-                            <div className="col-12 m-b-30">
-
-                                {
-                                    data.buttons.value.map((b: any) => {
-                                        var item: Buttons = b;
-                                        return (
-                                            <a href={item.link.value} className="btn-red-transparent m-r-20" target={item.target.value == 1 ? "_blank" : "_self"}>{item.name.value}</a>
-                                        )
-                                    })
-                                }
-
-
-                            </div>
-                        </div>
                     </div>
                 </div>
             </ContentMainComponent>

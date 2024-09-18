@@ -88,7 +88,7 @@ export default class MenuComponent extends React.Component<
             </div>
 
             <div className={`menu-btn`}>
-              <a href="">
+              <a href="https://assets-us-01.kc-usercontent.com/a6247815-8ce0-00a4-920e-2687d8f4861e/59450c6f-f064-46d6-a8b2-bdba9e8f950e/DIFAC%20Brochure%20-%202025%203.pdf">
                 <span>Download Brochure</span>
 
               </a>
@@ -118,8 +118,8 @@ export default class MenuComponent extends React.Component<
               </Link>
 
               <div className={`menu-event-detail`}>
-                <p>14 - 16 April 2025</p>
-                <p>Dubai World Trade Centre</p>
+                <p>{sectionData.date.value}</p>
+                <p>{sectionData.venue.value}</p>
               </div>
 
               <div>

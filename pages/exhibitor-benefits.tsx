@@ -62,21 +62,7 @@ function ListPage({ data }: { data: Basiccontentpage }) {
                             </div>
                         </div>
 
-                        <div className="row">
-                            {
-                                data.items.value.map((d: any) => {
-                                    var item: Partneritem = d;
-                                    return (
-                                        <div className="col-12 col-md-6 col-lg-3 text-center m-b-20">
-                                            <div className="event-page-item">
-                                                <img src={item.image.value[0].url} />
-                                                <p>{item.name.value}</p>
-                                            </div>
-                                        </div>
-                                    )
-                                })
-                            }
-                        </div>
+                        
 
                         <div className="row">
                             <div className="col-12 m-b-30">

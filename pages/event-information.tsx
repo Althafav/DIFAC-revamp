@@ -53,9 +53,12 @@ function ListPage({ data }: { data: Eventinformation }) {
                             <div className="col-12 col-md-6">
                                 {
                                     data.content.value ? (
-                                        <span className="content m-b-15"
-                                            dangerouslySetInnerHTML={{ __html: data.content.value }}
-                                        />
+                                        // <span className="content m-b-15"
+                                        //     dangerouslySetInnerHTML={{ __html: data.content.value }}
+                                        // />
+                                        <p className="description" dangerouslySetInnerHTML={{__html: data.content.value}}>
+                                            
+                                        </p>
                                     ) : ""
                                 }
 
